@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UberKid | Schedule</title>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></link>
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto"
+	rel="stylesheet"></link>
+<link rel="stylesheet" type="text/css" href="/css/contact.css"></link>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="../uberkid/js/contactform.js"></script>
+</head>
+<body>
+
+	<div class="maincontent">
+		<div class="container">
+
+			<form name="myForm" class="well form-horizontal" action="../uberkid/form-submit.html" onsubmit="return validateForm()" method="post"
+				id="contact_form">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Schedule a trip with UberKid...</legend>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Contact Name</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									name="contact_name" class="form-control"
+									type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Kid's Name</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-user"></i></span> <input
+									name="kid_name" class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label">E-Mail</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-envelope"></i></span> <input name="email"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Phone (###-###-####)</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-earphone"></i></span> <input name="phone"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Date of Trip (MMDDYYYY)</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-calendar"></i></span> <input name="trip_date"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Pickup Time (include am or pm)</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-clock"></i></span> <input name="pickup_time"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Appointment Time (include am or pm)</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-clock"></i></span> <input name="appt_time"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Pickup Address</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="pickup_address"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Pickup City</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="pickup_city"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Select Basic -->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Pickup State</label>
+						<div class="col-md-5 selectContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-list"></i></span> <select name="pickup_state"
+									class="form-control selectpicker">
+									<option value=" ">Please select your state</option>
+									<option>Alabama</option>
+									<option>Alaska</option>
+									<option>Arizona</option>
+									<option>Arkansas</option>
+									<option>California</option>
+									<option>Colorado</option>
+									<option>Connecticut</option>
+									<option>Delaware</option>
+									<option>District of Columbia</option>
+									<option> Florida</option>
+									<option>Georgia</option>
+									<option>Hawaii</option>
+									<option>Idaho</option>
+									<option>Illinois</option>
+									<option>Indiana</option>
+									<option>Iowa</option>
+									<option> Kansas</option>
+									<option>Kentucky</option>
+									<option>Louisiana</option>
+									<option>Maine</option>
+									<option>Maryland</option>
+									<option> Mass</option>
+									<option>Michigan</option>
+									<option>Minnesota</option>
+									<option>Mississippi</option>
+									<option>Missouri</option>
+									<option>Montana</option>
+									<option>Nebraska</option>
+									<option>Nevada</option>
+									<option>New Hampshire</option>
+									<option>New Jersey</option>
+									<option>New Mexico</option>
+									<option>New York</option>
+									<option>North Carolina</option>
+									<option>North Dakota</option>
+									<option>Ohio</option>
+									<option>Oklahoma</option>
+									<option>Oregon</option>
+									<option>Pennsylvania</option>
+									<option>Rhode Island</option>
+									<option>South Carolina</option>
+									<option>South Dakota</option>
+									<option>Tennessee</option>
+									<option>Texas</option>
+									<option> Uttah</option>
+									<option>Vermont</option>
+									<option>Virginia</option>
+									<option>Washington</option>
+									<option>West Virginia</option>
+									<option>Wisconsin</option>
+									<option>Wyoming</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Pickup Zip Code</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="pickup_zip"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Destination Address</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="destination_address"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Destination City</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="destination_city"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+					<!-- Select Basic -->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Destination State</label>
+						<div class="col-md-5 selectContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-list"></i></span> <select name="destination_state"
+									class="form-control selectpicker">
+									<option value=" ">Please select your state</option>
+									<option>Alabama</option>
+									<option>Alaska</option>
+									<option>Arizona</option>
+									<option>Arkansas</option>
+									<option>California</option>
+									<option>Colorado</option>
+									<option>Connecticut</option>
+									<option>Delaware</option>
+									<option>District of Columbia</option>
+									<option> Florida</option>
+									<option>Georgia</option>
+									<option>Hawaii</option>
+									<option>Idaho</option>
+									<option>Illinois</option>
+									<option>Indiana</option>
+									<option>Iowa</option>
+									<option> Kansas</option>
+									<option>Kentucky</option>
+									<option>Louisiana</option>
+									<option>Maine</option>
+									<option>Maryland</option>
+									<option> Mass</option>
+									<option>Michigan</option>
+									<option>Minnesota</option>
+									<option>Mississippi</option>
+									<option>Missouri</option>
+									<option>Montana</option>
+									<option>Nebraska</option>
+									<option>Nevada</option>
+									<option>New Hampshire</option>
+									<option>New Jersey</option>
+									<option>New Mexico</option>
+									<option>New York</option>
+									<option>North Carolina</option>
+									<option>North Dakota</option>
+									<option>Ohio</option>
+									<option>Oklahoma</option>
+									<option>Oregon</option>
+									<option>Pennsylvania</option>
+									<option>Rhode Island</option>
+									<option>South Carolina</option>
+									<option>South Dakota</option>
+									<option>Tennessee</option>
+									<option>Texas</option>
+									<option> Uttah</option>
+									<option>Vermont</option>
+									<option>Virginia</option>
+									<option>Washington</option>
+									<option>West Virginia</option>
+									<option>Wisconsin</option>
+									<option>Wyoming</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Destination Zip Code</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-home"></i></span> <input name="destination_zip"
+									class="form-control" type="text"></input>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Text area -->
+
+					<div class="form-group">
+						<label class="col-md-4 control-label">Comment</label>
+						<div class="col-md-5 inputGroupContainer">
+							<div class="input-group">
+								<span class="input-group-addon"><i
+									class="glyphicon glyphicon-pencil"></i></span>
+								<textarea class="form-control" name="comment"
+									placeholder="Comment"></textarea>
+							</div>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label"></label>
+						<div class="col-md-4">
+							<button type="submit" value="Submit" class="btn btn-warning">
+								Send <span class="glyphicon glyphicon-send"></span>
+							</button>
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- /.container -->
+
+	<script type="text/javascript"
+		src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script type="text/javascript"
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
