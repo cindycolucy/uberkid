@@ -34,11 +34,11 @@
 			var subject = document.forms["email"]["subject"];
 			var body = document.forms["email"]["body"];
 
-			var bodyContent = "Contact:\\ " + contact 
-			+ "\nKid's\ Name:\ " + kidName;
+			var bodyContent = "Contact:\t" + contact 
+			+ "\nKid's_Name:\t" + kidName;
+			+ "\nEmail:\t" + email;
 
-
-			subject.value="Trip&nbsp;Request";
+			subject.value="Trip\tRequest";
 			body.value=bodyContent;
 
 			emailForm.action="mailto:ckcolucy@gmail.com?subject=" + subject.value + "&body=" + body.value;
@@ -383,7 +383,7 @@
 																			<div class="form-group">
 																				<label class="col-md-4 control-label"></label>
 																				<div class="col-md-4">
-																					<input type="button" value="Send <span class='glyphicon glyphicon-send'></span>" onclick="sendMail()" class="btn btn-warning">
+																					<input type="button" value="Send Email" onclick="sendMail()" class="btn btn-warning">
 																				</div>
 																			</div>
 
