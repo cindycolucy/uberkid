@@ -39,3 +39,6 @@ button .icon-bar{
 	background-color: #eac67a;
 	border: white 1px solid;
 }
+#email{
+	display: none;
+}
