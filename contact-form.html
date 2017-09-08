@@ -35,8 +35,19 @@
 			var body = document.forms["email"]["body"];
 
 			var bodyContent = "Contact:\t" + contact 
-			+ "\nKid's_Name:\t" + kidName;
-			+ "\nEmail:\t" + email;
+			+ "\nKid's_Name:\t" + kidName
+			+ "\nEmail:\t" + email
+			+ "\nPhone:\t" + phone
+			+ "\nTrip_Date:\t" + tripdate
+			+ "\nPickup_Time:\t" + pickuptime
+			+ "\nAppt_Time:\t" + appttime
+			+ "\nPickup_Address:\t" + paddress
+			+ "\nPickup_City:\t" + pcity
+			+ "\nPickup_Zip:\t" + pzip
+			+ "\nDestination_Address:\t" + daddress
+			+ "\nDestination_City:\t" + dcity
+			+ "\nDestination_Zip:\t" + dzip
+			+ "\nComment:\t" + comment;
 
 			subject.value="Trip\tRequest";
 			body.value=bodyContent;
