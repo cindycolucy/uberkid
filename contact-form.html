@@ -34,12 +34,14 @@
 			var subject = document.forms["email"]["subject"];
 			var body = document.forms["email"]["body"];
 
-			var bodyContent = "Contact:%20"+contact;
+			var bodyContent = "Contact:\\ " + contact 
+			+ "\nKid's\ Name:\ " + kidName;
 
-			subject.value="Trip%20Request";
+
+			subject.value="Trip&nbsp;Request";
 			body.value=bodyContent;
 
-			emailForm.action="mailto:ckcolucy@gmail.com?subject=" + subject + "&body=" + body;
+			emailForm.action="mailto:ckcolucy@gmail.com?subject=" + subject.value + "&body=" + body.value;
 
 			emailForm.submit();
 
@@ -387,7 +389,7 @@
 
 																		</fieldset>
 																	</form>
-																	<form name="email" id="email" method="post" >
+																	<form name="email" id="email" method="get" >
 																		<input type="hidden" name="subject">
 																		<input type="hidden" name="body">
 																	</form>
